@@ -23,7 +23,7 @@ class Board
 			input = gets.chomp.to_i
 			@player = "human"
 			until input < 9 && @board[input] != "X" && @board[input] != "O"
-				puts "That space is already taken. Try again loser!"
+				puts "That space is already taken. Try again!"
 				input = gets.chomp.to_i
 			end
 			@board[input] = "X"
